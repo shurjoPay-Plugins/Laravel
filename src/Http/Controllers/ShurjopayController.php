@@ -11,32 +11,12 @@ class ShurjopayController extends Controller
         return view('shurjopay::shurjopay');
     }
 
-
-    //mowmita
-    //example info
-/*$info = array(
-'currency' => "BDT",
-'return_url' => "http://127.0.0.1:8000/response",
-'cancel_url' => "http://127.0.0.1:8000/response",
-'amount' => 10,
-'order_id' => "235635464",
-'discsount_amount' => 0,
-'disc_percent' => 0,
-'client_ip' => "http://127.0.0.1:8000",
-'customer_name' => "customer_name",
-'customer_phone' => "customer_phone",
-'email' => "email",
-'customer_address' => "customer_address",
-'customer_city' => "customer_city",
-'customer_state' => "customer_state",
-'customer_postcode' => "customer_postcode",
-'customer_country' => "customer_country",
-);*/
-
-    //$store_id is not required param for single vendored application
     public function checkout($info){
         $flag=0;
         $info['prefix']=env('MERCHANT_PREFIX');
+        $info['return_url']=env('MERCHANT_RETURN_URL');
+        $info['cancel_url']=env('MERCHANT_CANCEL_URL');
+
         if(!isset($info['prefix']))
         {
             $flag=1;
@@ -74,7 +54,7 @@ class ShurjopayController extends Controller
         }
         if($flag==0)
         {
-                $response = $this->getUrl($info);
+            $response = $this->getUrl($info);
 
             $arr = json_decode($response);
             if(!empty($arr->checkout_url))
@@ -90,12 +70,12 @@ class ShurjopayController extends Controller
     }
     private function getToken() {
         $userExists=false;
-            if(!empty(env('MERCHANT_USERNAME')) && !empty(env('MERCHANT_PASSWORD')))
-            {
-                $user= env('MERCHANT_USERNAME');
-                $pass= env('MERCHANT_PASSWORD');
-                $userExists=true;
-            }
+        if(!empty(env('MERCHANT_USERNAME')) && !empty(env('MERCHANT_PASSWORD')))
+        {
+            $user= env('MERCHANT_USERNAME');
+            $pass= env('MERCHANT_PASSWORD');
+            $userExists=true;
+        }
 
 
         if($userExists)
@@ -135,7 +115,7 @@ class ShurjopayController extends Controller
     }
     private function getUrl($info) {
 
-            $response=$this->getToken();
+        $response=$this->getToken();
 
         $arr=json_decode($response);
 
@@ -187,10 +167,10 @@ class ShurjopayController extends Controller
             'order_id' => $order_id);
         $order_id=json_encode($order_id);
         $response=$this->getToken();
-
         $arr=json_decode($response);
         if(!empty($arr->token))
         {
+
             $tok=($arr->token);
             $curl = curl_init();
 
