@@ -1,0 +1,20 @@
+{
+    "name": "shurjopay/laravel8",
+    "description": "Online Payment Gateway",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nazia Afsan Mowmita",
+            "email": "mowmita@shurjomukhi.com.bd"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+	"autoload": {
+        "psr-4": {
+            "shurjopay\\ShurjopayLaravelPackage8\\": "src/"
+        }
+
+    }
+}
