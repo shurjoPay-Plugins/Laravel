@@ -1,19 +1,19 @@
 # spV2-laravel8
-####To integrate the shurjoPay Payment Gateway in your Laravel project do the following tasks sequentially.
+#### To integrate the shurjoPay Payment Gateway in your Laravel project do the following tasks sequentially.
 
-###Installation and Configuration 
-######After successful installation of shurjopay-laravel-package, go to your project and open config folder and then click on app.php file. Append the following line in providers array.
+### Installation and Configuration 
+###### After successful installation of shurjopay-laravel-package, go to your project and open config folder and then click on app.php file. Append the following line in providers array.
 
 
 ``composer require shurjopay/laravel
 ``
 
-######After successful installation of shurjopay-laravel-package, go to your project and open config folder and then click on app.php file. Append the following line in providers array.
+###### After successful installation of shurjopay-laravel-package, go to your project and open config folder and then click on app.php file. Append the following line in providers array.
 ``
 shurjopayv2\ShurjopayLaravelPackage8\ShurjopayServiceProvider::class
 ``
 
-######After successfully doing the above steps add the following Keys in .env file with the credentials provided from shurjoMukhi Limited
+###### After successfully doing the above steps add the following Keys in .env file with the credentials provided from shurjoMukhi Limited
 
 ``MERCHANT_USERNAME=""  
 ``
