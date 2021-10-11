@@ -1,5 +1,5 @@
 {
-    "name": "shurjopayV2/laravel8",
+    "name": "shurjopayv2/laravel8",
     "description": "Online Payment Gateway",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,7 @@
     "require": {},
 	"autoload": {
         "psr-4": {
-            "shurjopayV2\\ShurjopayLaravelPackage8\\": "src/"
+            "shurjopayv2\\ShurjopayLaravelPackage8\\": "src/"
         }
 
     }

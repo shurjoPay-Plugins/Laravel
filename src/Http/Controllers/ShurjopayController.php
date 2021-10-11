@@ -1,6 +1,6 @@
 <?php
 
-namespace shurjopayV2\ShurjopayLaravelPackage8\Http\Controllers;
+namespace shurjopayv2\ShurjopayLaravelPackage8\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

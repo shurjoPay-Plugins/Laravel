@@ -1,5 +1,5 @@
 <?php
-	namespace shurjopayV2\ShurjopayLaravelPackage8;
+	namespace shurjopayv2\ShurjopayLaravelPackage8;
 	use Illuminate\Support\ServiceProvider;
 	
 	class ShurjopayServiceProvider extends ServiceProvider{
