@@ -32,7 +32,7 @@ shurjopayv2\ShurjopayLaravelPackage8\ShurjopayServiceProvider::class
 
 ``ENGINE_URL=""
 ``
-######Now add this line of code in your method where you want to call shurjoPay Payment Gateway. You can use any code segment of below
+###### Now add this line of code in your method where you want to call shurjoPay Payment Gateway. You can use any code segment of below
 
 ``
 use shurjopayv2\ShurjopayLaravelPackage8\Http\Controllers\ShurjopayController;
@@ -58,6 +58,7 @@ use shurjopayv2\ShurjopayLaravelPackage8\Http\Controllers\ShurjopayController;
 ``$shurjopay_service = new ShurjopayController();
 return $shurjopay_service->checkout($info);``
 
-######for verifying,
+###### for verifying,
+
 ``$shurjopay_service = new ShurjopayController();
 return $shurjopay_service->verify($order_id);``
