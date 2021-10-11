@@ -1,5 +1,5 @@
 <?php
-	namespace shurjopay\ShurjopayLaravelPackage8;
+	namespace shurjopayV2\ShurjopayLaravelPackage8;
 	use Illuminate\Support\ServiceProvider;
 	
 	class ShurjopayServiceProvider extends ServiceProvider{
@@ -8,7 +8,6 @@
 		{
 			$this->loadRoutesFrom(__DIR__.'/routes/web.php');
 			$this->loadViewsFrom(__DIR__.'/views','shurjopay');
-			$this->loadMigrationsFrom(__DIR__.'/database/migrations');
 		}
 		
 		public function register()

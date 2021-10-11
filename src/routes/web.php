@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace'=>'shurjopay\ShurjopayLaravelPackage8\Http\Controllers'],function(){
+Route::group(['namespace'=>'shurjopayV2\ShurjopayLaravelPackage8\Http\Controllers'],function(){
 
 });
 

@@ -1,11 +1,8 @@
 <?php
 
-namespace shurjopay\ShurjopayLaravelPackage8\Http\Controllers;
-use App\Models\SchoolInfo;
+namespace shurjopayV2\ShurjopayLaravelPackage8\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use shurjopay\ShurjopayLaravelPackage\Models\Sporder;
-use shurjopay\ShurjopayLaravelPackage\Models\Spsetup;
 
 class ShurjopayController extends Controller
 {
