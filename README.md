@@ -3,7 +3,7 @@
 
 ### Installation and Configuration
 
-``composer require shurjopay/laravel
+``composer require shurjopayv2/laravel8
 ``
 
 ###### After successful installation of shurjopay-laravel-package, go to your project and open config folder and then click on app.php file. Append the following line in providers array.
