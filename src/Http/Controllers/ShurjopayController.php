@@ -162,7 +162,7 @@ class ShurjopayController extends Controller
         }
 
     }
-    private function verify($order_id) {
+    public function verify($order_id) {
         $order_id = array(
             'order_id' => $order_id);
         $order_id=json_encode($order_id);
