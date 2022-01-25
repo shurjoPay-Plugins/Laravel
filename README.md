@@ -61,7 +61,7 @@ return $shurjopay_service->checkout($info);``
 ``$shurjopay_service = new ShurjopayController();
 return $shurjopay_service->verify($order_id);``
 
-### Postmane Documentations
+### Postman Documentations
 
     This document will illustrate the overall request and response flow.
     URL : https://documenter.getpostman.com/view/6335853/U16dS8ig	
