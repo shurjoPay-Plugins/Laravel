@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/57352037/170198396-932692aa-3354-4cf0-abc1-2b8ef43a6de3.png)
 # ShurjoPay
 
-Shurjopay raw-php integration steps
+Shurjopay laravel integration steps
 ## Prerequisite
 To integrate ShurjoPay you need few credentials to access shurjopay:
 ```
