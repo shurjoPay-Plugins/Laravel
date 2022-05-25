@@ -1,3 +1,25 @@
+![image](https://user-images.githubusercontent.com/57352037/170198396-932692aa-3354-4cf0-abc1-2b8ef43a6de3.png)
+# ShurjoPay
+
+Shurjopay raw-php integration steps
+## Prerequisite
+To integrate ShurjoPay you need few credentials to access shurjopay:
+```
+:param prefix: Any string not more than 5 characters. It distinguishes the stores of a merchant.
+:param currency: ISO format,(only BDT and USD are allowed).
+:param return_url: Merchant should provide a GET Method return url to verify users initiated transaction status. 
+:param cancel_url: Merchant should provide a cancel url to redirect the user if he/she cancels the transaction in midway. 
+:param client_ip: User's ip
+:param username: Merchant Username provided by shurjopay.
+:param password: Merchant Password provided by shurjopay.
+:param post_address: Live shurjopay version 2 URL.
+```
+
+
+> 📝 **NOTE** For shurjoPay version 2 live engine integration's all necessary credential will be given to merchant after subscription completed on shurjoPay gateway.
+
+
+
 # spV2-laravel8
 #### To integrate the shurjoPay Payment Gateway in your Laravel project do the following tasks sequentially.
 
@@ -61,7 +83,12 @@ return $shurjopay_service->checkout($info);``
 ``$shurjopay_service = new ShurjopayController();
 return $shurjopay_service->verify($order_id);``
 
+
 ### Postman Documentations
 
     This document will illustrate the overall request and response flow.
     URL : https://documenter.getpostman.com/view/6335853/U16dS8ig	
+		
+### Who do I talk to? ###
+	For any technical assistance please contact to: https://shurjopay.com.bd/#contacts
+
